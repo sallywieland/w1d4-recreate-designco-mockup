@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+}
+img {
+    width: 100%;
+}
+html, body {
+    height: 100%;
+}
+/*body {
+    display: flex;
+}*/
+header {
+    position: fixed;
+    top: 0;
+    height: 100px;
+    width: 100%;
+    background-color: rgb(227, 227, 227);
+}
+  .container1 {
+      width: 800px;
+      margin: 0 auto;
+      border-top: 5px solid red;
+  }
+  .designco-logo {
+    width: 100px;
+    height: 17px;
+    margin-left: 50px;
+  }
+    .ul-header {
+        display: inline-block;
+        margin-top: 0px;
+        padding-left: 50px;
+        list-style: none;
+    }
+    .li-header {
+        display: inline-block;
+        padding-right: 25px;
+        padding-top: 35px;
+        font-weight: normal;
+    }
+a {
+    text-decoration: none;
+    color: gray;
+}
+    a:hover {
+        color: red;
+    }
+.search-bar {
+  height: 20px;
+  width: 20px;
+  float: right;
+  margin-top: 35px;
+  margin-right: 50px;
+}
+.container2 {
+  width: 800px;
+  margin: 0 auto;
+  margin-top:100px;
+  text-align: center;
+  color: #494949;
+  font-size: 25px;
+}
+    .container2 > h1 {
+      margin: 0;
+      padding: 0;
+      font-size: 50px;
+    }
+.grid {
+    display: flex;
+    width: 920px;
+    position: fixed;
+    margin-top: 400px;
+    vertical-align: middle;
+}
+.column1 {
+  flex-wrap: wrap;
+  flex: 2;
+}
+.col1sec1 {
+    flex: 2;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    display: flex;
+}
+.col1sec2 {
+    display: flex;
+    flex-direction: row;
+    flex: 3;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.col1sec2a {
+    flex: 1.2;
+    margin-right: 10px;
+
+}
+.col1sec2b {
+  flex: 1.8;
+
+}
+.column2 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.col2sec1 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+}
+.col2sec2 {
+  margin-top: 10px;
+}
+.container3 {
+  width: 800px;
+  margin-top: 900px;
+  margin: 0 auto;
+  text-align: center;
+  color: #494949;
+  font-size: 25px;
+}
+.bottom-text-grid {
+  display: flex;
+  flex-direction: row;
+  max-width: 960px;
+  border: 2px solid black;
+  flex-wrap: wrap;
+}
+.bottom-text1, .bottom-text2 .bottom-text3 .bottom-text4 {
+  width: 100px;
+  height: 100px;
+}
