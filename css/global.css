@@ -69,9 +69,7 @@ a {
 .grid {
     display: flex;
     width: 920px;
-    position: fixed;
-    margin-top: 400px;
-    vertical-align: middle;
+    margin: 0 auto;
 }
 .column1 {
   flex-wrap: wrap;
@@ -117,18 +115,40 @@ a {
   width: 800px;
   margin-top: 900px;
   margin: 0 auto;
-  text-align: center;
-  color: #494949;
-  font-size: 25px;
 }
 .bottom-text-grid {
   display: flex;
-  flex-direction: row;
-  max-width: 960px;
-  border: 2px solid black;
-  flex-wrap: wrap;
+  width: 920px;
+  margin: 0 auto;
 }
-.bottom-text1, .bottom-text2 .bottom-text3 .bottom-text4 {
-  width: 100px;
-  height: 100px;
+.bottom-text1, .bottom-text2 {
+  width: 200px;
+  height: 200px;
+  /*border: 1px solid black;*/
+  padding-right: 20px;
+}
+.bottom-text1 {
+    flex: 1;
+}
+.bottom-text2 {
+    flex: 3;
+    columns: 3;
+}
+.bottom-text-font {
+  font-size: 15px;
+  color: #494949;
+  padding-bottom: 5px;
+}
+.red-text {
+  color: red;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.header-text {
+  color: #494949
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.bottom-text-links {
+  text-decoration: underline;
 }
