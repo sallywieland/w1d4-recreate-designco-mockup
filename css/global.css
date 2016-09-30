@@ -15,7 +15,7 @@ header {
     top: 0;
     height: 100px;
     width: 100%;
-    background-color: rgb(227, 227, 227);
+    background-color: rgb(246, 246, 246);
 }
   .container1 {
       width: 960px;
@@ -43,7 +43,7 @@ a {
     text-decoration: none;
     color: gray;
 }
-    a:hover {
+  a:hover {
         color: red;
     }
 .search-bar {
@@ -67,10 +67,10 @@ a {
       font-size: 50px;
     }
 .grid {
-    display: flex;
-    max-width: 960px;
-    margin: 0 auto;
-    margin-top: 100px;
+  display: flex;
+  max-width: 960px;
+  margin: 0 auto;
+  margin-top: 100px;
 }
     .grid img {
       transition: 2s ease;
@@ -79,21 +79,21 @@ a {
       opacity: 0.5;
     }
 .column1 {
-  flex-wrap: wrap;
-  flex: 2;
+  /*flex-wrap: wrap;*/
+  /*flex: 2;*/
 }
 .col1sec1 {
-    flex: 2;
+    /*flex: 2;*/
     margin-right: 10px;
     margin-bottom: 10px;
-    display: flex;
+    /*display: flex;*/
 }
 .col1sec2 {
     display: flex;
-    flex-direction: row;
-    flex: 3;
+    /*flex-direction: row;*/
+    /*flex: 3;*/
     margin-right: 10px;
-    margin-bottom: 10px;
+    /*margin-bottom: 10px;*/
 }
 .col1sec2a {
     flex: 1.2;
@@ -102,66 +102,66 @@ a {
 }
 .col1sec2b {
   flex: 1.8;
-
 }
 .column2 {
-  display: flex;
+  /*display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
+  flex-direction: column;*/
 }
 .col2sec1 {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-
 }
 .col2sec2 {
-  margin-top: 10px;
+  margin-top: 5px;
 }
 .container3 {
-  width: 960px;
   margin: 0 auto;
   padding-top: 20px;
+  padding-right: 20px;
+  padding-left: 10px;
 }
 .bottom-text-grid {
+  display: -webkit-flex;
   display: flex;
   max-width: 960px;
-  margin: 0 auto;
+  padding-bottom: 40px;
+  /*margin: 0 auto;*/
 }
-.bottom-text1, .bottom-text2 {
+.bottom-text1, .bottom-text2, .bottom-text3 {
   width: 200px;
-  height: 200px;
-  /*border: 1px solid black;*/
-  padding-right: 20px;
+
 }
 .bottom-text1 {
     flex: 1;
 }
 .bottom-text2 {
+    width: 100%;
     flex: 3;
-    columns: 3;
+}
+.bottom-text3 {
+  flex: 3;
+  columns: 3;
+  width: 100%;
 }
 .bottom-text2 > h1 {
   color: #494949;
   font-weight: bold;
   font-size: 15px;
   margin-top: 0;
-  padding: 0;
+  /*padding: 0;*/
 }
 .bottom-text-font {
   font-size: 14px;
   color: #494949;
-  padding-bottom: 5px;
   font-weight: lighter;
 }
 .red-text {
   color: red;
+  font-size: 15px;
   margin-bottom: 10px;
   font-weight: bold;
 }
 .header-text {
   color: #494949;
-  margin-bottom: 5px;
   font-weight: bold;
 }
 .bottom-text-links {
