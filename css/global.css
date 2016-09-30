@@ -13,7 +13,7 @@ html, body {
 header {
     position: fixed;
     top: 0;
-    height: 100px;
+    padding-bottom: 25px;
     width: 100%;
     background-color: rgb(246, 246, 246);
 }
@@ -29,7 +29,7 @@ header {
   }
     .ul-header {
         display: inline-block;
-        margin-top: 0px;
+        margin-top: 0;
         padding-left: 50px;
         list-style: none;
     }
@@ -54,7 +54,6 @@ a {
   margin-right: 50px;
 }
 .container2 {
-  width: 800px;
   margin: 0 auto;
   margin-top:200px;
   text-align: center;
@@ -66,34 +65,70 @@ a {
       padding: 0;
       font-size: 50px;
     }
-.grid {
+    .grid {
+        margin: 0 auto;
+        width: 70vw;
+        display: flex;
+        margin-top: 100px;
+    }
+    .grid img {
+        width: 100%;
+    }
+    .grid__column {
+        display: flex;
+        /*flex-direction: row;*/
+        flex-wrap: wrap;
+        padding-right: 1vw;
+        align-content: flex-start;
+    }
+    .grid__column:last-child {
+        padding: 0;
+    }
+    .grid__column--two-thirds {
+        /*min-width: 64vw;*/
+        flex: 1.99;
+    }
+    .grid__column--one-third {
+        /*min-width: 32vw;*/
+        flex: 1.01;
+    }
+    .grid__item {
+        padding-bottom: 1vw;
+    }
+    .grid__item--full {
+        min-width: 100%;
+        flex: 3;
+    }
+    .grid__item--one-third {
+        flex: 1.2;
+        padding-right: 1vw;
+    }
+    .grid__item--two-thirds {
+        flex: 1.8;
+    }
+/*.grid {
   display: flex;
   max-width: 960px;
   margin: 0 auto;
   margin-top: 100px;
-}
+}*/
     .grid img {
       transition: 2s ease;
     }
     .grid img:hover {
       opacity: 0.5;
     }
-.column1 {
-  /*flex-wrap: wrap;*/
-  /*flex: 2;*/
+/*.column1 {
+
 }
 .col1sec1 {
-    /*flex: 2;*/
     margin-right: 10px;
     margin-bottom: 10px;
-    /*display: flex;*/
+
 }
 .col1sec2 {
     display: flex;
-    /*flex-direction: row;*/
-    /*flex: 3;*/
     margin-right: 10px;
-    /*margin-bottom: 10px;*/
 }
 .col1sec2a {
     flex: 1.2;
@@ -104,15 +139,12 @@ a {
   flex: 1.8;
 }
 .column2 {
-  /*display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;*/
 }
 .col2sec1 {
 }
 .col2sec2 {
   margin-top: 5px;
-}
+}*/
 .container3 {
   margin: 0 auto;
   padding-top: 20px;
@@ -120,9 +152,8 @@ a {
   padding-left: 10px;
 }
 .bottom-text-grid {
-  display: -webkit-flex;
   display: flex;
-  max-width: 960px;
+  max-width: 70vw;
   padding-bottom: 40px;
   /*margin: 0 auto;*/
 }
@@ -135,12 +166,8 @@ a {
 .bottom-text2 {
     width: 100%;
     flex: 3;
+    padding-left: 20px;
 }
-/*.bottom-text3 {
-  flex: 3;
-  columns: 3;
-  width: 100%;
-}*/
 .bottom-text2 > h4 {
   color: #494949;
   font-weight: bold;
