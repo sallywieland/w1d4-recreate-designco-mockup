@@ -128,7 +128,6 @@ a {
 }
 .bottom-text1, .bottom-text2, .bottom-text3 {
   width: 200px;
-
 }
 .bottom-text1 {
     flex: 1;
@@ -137,17 +136,23 @@ a {
     width: 100%;
     flex: 3;
 }
-.bottom-text3 {
+/*.bottom-text3 {
   flex: 3;
   columns: 3;
   width: 100%;
-}
-.bottom-text2 > h1 {
+}*/
+.bottom-text2 > h4 {
   color: #494949;
   font-weight: bold;
   font-size: 15px;
   margin-top: 0;
-  /*padding: 0;*/
+  padding: 0;
+}
+p {
+  columns: 3;
+  -webkit-column-width: 150px;
+   -moz-column-width: 150px;
+        column-width: 150px;
 }
 .bottom-text-font {
   font-size: 14px;
@@ -166,4 +171,24 @@ a {
 }
 .bottom-text-links {
   text-decoration: underline;
+}
+@media all and (max-width: 400px) {
+    .grid {
+        display: block;
+        padding: 0;
+    }
+    .grid div {
+        width: 100%;
+        display: block;
+        padding: 0;
+    }
+    .bottom-text-grid {
+        display: block;
+        padding: 0;
+    }
+    .bottom-text-grid div {
+        width: 100%;
+        display: block;
+        padding: 0;
+    }
 }
