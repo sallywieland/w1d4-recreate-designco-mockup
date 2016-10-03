@@ -7,9 +7,6 @@ img {
 html, body {
     height: 100%;
 }
-/*body {
-    display: flex;
-}*/
 header {
     position: fixed;
     top: 0;
@@ -44,7 +41,10 @@ a {
     color: gray;
 }
   a:hover {
-        color: red;
+        color: white;
+        padding-top: 35px;
+        padding-bottom: 45px;
+        background-color: white;
     }
 .search-bar {
   height: 20px;
@@ -76,7 +76,6 @@ a {
     }
     .grid__column {
         display: flex;
-        /*flex-direction: row;*/
         flex-wrap: wrap;
         padding-right: 1vw;
         align-content: flex-start;
@@ -85,11 +84,9 @@ a {
         padding: 0;
     }
     .grid__column--two-thirds {
-        /*min-width: 64vw;*/
         flex: 1.99;
     }
     .grid__column--one-third {
-        /*min-width: 32vw;*/
         flex: 1.01;
     }
     .grid__item {
@@ -106,45 +103,12 @@ a {
     .grid__item--two-thirds {
         flex: 1.8;
     }
-/*.grid {
-  display: flex;
-  max-width: 960px;
-  margin: 0 auto;
-  margin-top: 100px;
-}*/
     .grid img {
       transition: 2s ease;
     }
     .grid img:hover {
       opacity: 0.5;
     }
-/*.column1 {
-
-}
-.col1sec1 {
-    margin-right: 10px;
-    margin-bottom: 10px;
-
-}
-.col1sec2 {
-    display: flex;
-    margin-right: 10px;
-}
-.col1sec2a {
-    flex: 1.2;
-    margin-right: 10px;
-
-}
-.col1sec2b {
-  flex: 1.8;
-}
-.column2 {
-}
-.col2sec1 {
-}
-.col2sec2 {
-  margin-top: 5px;
-}*/
 .container3 {
   margin: 0 auto;
   padding-top: 20px;
@@ -155,9 +119,8 @@ a {
   display: flex;
   max-width: 70vw;
   padding-bottom: 40px;
-  /*margin: 0 auto;*/
 }
-.bottom-text1, .bottom-text2, .bottom-text3 {
+.bottom-text1, .bottom-text2 {
   width: 200px;
 }
 .bottom-text1 {
@@ -178,8 +141,9 @@ a {
 p {
   columns: 3;
   -webkit-column-width: 150px;
-   -moz-column-width: 150px;
-        column-width: 150px;
+  -ms-column-width: 150px;
+  -moz-column-width: 150px;
+  column-width: 150px;
 }
 .bottom-text-font {
   font-size: 14px;
